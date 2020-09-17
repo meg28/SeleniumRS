@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+ <listeners>
+<listener class-name = "Utility.Listners"/>
+</listeners> 
+
+  <test name="Test">
+    <classes>
+     <!--   <class name="SeleniumPackage.SeleniumRS.MultipleTest"/>
+      <class name="SeleniumPackage.SeleniumRS.SuggestiveDropdownTest"/>
+      <class name="SeleniumPackage.SeleniumRS.WebTableTest"/>
+      <class name="SeleniumPackage.SeleniumRS.SwitchTabTest"/>
+      <class name="SeleniumPackage.SeleniumRS.FrameTest"/>
+      <class name="SeleniumPackage.SeleniumRS.SwitchWindowTest"/>
+        <class name="Utility.DataDriven"/>
+      
+      <class name="SeleniumPackage.SeleniumRS.DropdownTest"/> 
+      <class name="SeleniumPackage.SeleniumRS.AlertTest"/> 
+  
+       
+  <class name="SeleniumPackage.SeleniumRS.FrameTest"/> -->
+  <class name="SeleniumPackage.SeleniumRS.AlertTest"/> 
+   <parameter name="alertp" value="Meghna"/>
+   
+    </classes>
+  </test> 
+  </suite> 
+

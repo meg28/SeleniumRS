@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+  <Appenders>
+  
+  
+    <RollingFile name="appFileAppender" fileName="logs/pass.log" filePattern="logs/pass/app-%d{MM-dd-yyyy}.log"> 
+                  <PatternLayout pattern="%d{MM-dd-yyyy HH:mm:ss} [%t] %-5level %logger{36} - %msg%n"/>  
+  
+  
+  <Policies>
+  <TimeBasedTriggeringPolicy />
+</Policies>
+
+   </RollingFile> 
+ 
+    
+<!--The below code is to get logs in console   -->   
+   <!--  <Console name="Console" target="SYSTEM_OUT">
+      <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+    </Console>  -->
+  </Appenders> 
+  
+  <Loggers>      
+         <Root level="info">
+            <AppenderRef ref="appFileAppender"/>
+        </Root>    
+     
+  </Loggers>
+</Configuration> 
+
